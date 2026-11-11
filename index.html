@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SixHourSite: your business website, live in six hours</title>
+<meta name="description" content="A professional website for your local service business, ready in six hours. Black Friday price: $199 instead of $499. No deposit. You pay only after you’ve seen it.">
+<meta name="theme-color" content="#0f1f24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#0f1f24}
+a{color:#ffb703}a:hover{color:#ffd166}
+:focus-visible{outline:3px solid #ffd166;outline-offset:3px}
+input::placeholder,textarea::placeholder{color:#8fa5aa}
+summary{cursor:pointer}
+[hidden]{display:none !important}
+@media (max-width:760px){.nav-links{display:none !important}}
+.steps{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.steps li{flex:1 1 150px;padding:10px 14px;border-radius:4px;font-size:16px;font-weight:600;background:#0f1f24;color:#a9bcc0}
+.steps li.done{background:#2b474f;color:#f2efe6}
+.steps li.current{background:#ffb703;color:#0f1f24}
+.step{display:flex;flex-direction:column;gap:20px;margin-bottom:28px}
+.js .step{display:none;margin-bottom:0}
+.js .step.active{display:flex}
+.js-only{display:none !important}
+.js .js-only{display:revert !important}
+.js dl.js-only{display:grid !important}
+.js #form-nav{display:flex !important}
+form:not(.js) .steps{display:none}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-weight:600}
+.field input,.field select,.field textarea{width:100%}
+.choice{display:flex;align-items:center;gap:10px;font-weight:600;cursor:pointer;padding:12px 20px;min-height:48px;border-radius:4px;border:2px solid #5d7a82}
+.choice:has(input:checked){border-color:#ffb703}
+.choice input{width:20px;height:20px;accent-color:#ffb703;margin:0}
+</style>
+</head>
+<body>
+<div style="background: #0f1f24; color: #f2efe6; font-family: Barlow, Helvetica Neue, Arial, sans-serif; font-size: 18px; line-height: 1.55">
+
+<a href="#order" style="display: block; background: #ffb703; color: #0f1f24; text-decoration: none">
+<div style="max-width: 1120px; margin: 0 auto; padding: 12px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 4px 20px; text-align: center; font-size: 18px">
+<span style="font-weight: 600">Black Friday: your website for $199 instead of $499.</span>
+<span>Ends November 30.</span>
+<span id="sale-timer" hidden><span id="countdown" style="font-weight: 600; font-variant-numeric: tabular-nums"></span> left.</span>
+</div>
+</a>
+
+<header style="border-bottom: 1px solid #2b474f">
+<div style="max-width: 1120px; margin: 0 auto; padding: 16px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 30px; color: #f2efe6; text-decoration: none; letter-spacing: 0.01em">SixHourSite</a>
+<nav class="nav-links" aria-label="Main" style="display: flex; gap: 28px; align-items: center">
+<a href="#included" style="color: #f2efe6; text-decoration: none; font-size: 17px; padding: 12px 0">What you get</a>
+<a href="#how" style="color: #f2efe6; text-decoration: none; font-size: 17px; padding: 12px 0">How it works</a>
+<a href="#pricing" style="color: #f2efe6; text-decoration: none; font-size: 17px; padding: 12px 0">Pricing</a>
+<a href="#faq" style="color: #f2efe6; text-decoration: none; font-size: 17px; padding: 12px 0">Questions</a>
+</nav>
+<a href="#order" style="background: #ffb703; color: #0f1f24; font-weight: 600; font-size: 17px; text-decoration: none; padding: 12px 22px; border-radius: 4px; min-height: 20px">Start my site</a>
+</div>
+</header>
+
+<main id="top">
+
+<section style="max-width: 1120px; margin: 0 auto; padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 48px) clamp(40px, 6vw, 72px)">
+<h1 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(52px, 9vw, 116px); line-height: 0.95; letter-spacing: -0.01em; max-width: 12ch">Your business website, live in six hours.</h1>
+<p style="margin: 28px 0 0; font-size: clamp(19px, 2.2vw, 23px); max-width: 56ch; color: #d9e2e3">For landscapers, cleaners, detailers, and contractors. Order this morning and take calls from your new site tonight. You pay only after you’ve seen it.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 20px; margin-top: 28px">
+<span style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(60px, 8vw, 88px); line-height: 1; color: #ffb703">$199</span>
+<span style="font-size: 24px; color: #a9bcc0">Regular price <s>$499</s></span>
+<span style="font-size: 20px; font-weight: 600">Black Friday price. Save $300 through November 30.</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 36px">
+<a href="#order" style="background: #ffb703; color: #0f1f24; font-weight: 600; font-size: 20px; text-decoration: none; padding: 16px 30px; border-radius: 4px">Start my site</a>
+<a href="#included" style="color: #f2efe6; font-weight: 600; font-size: 20px; text-decoration: none; padding: 14px 28px; border-radius: 4px; border: 2px solid #5d7a82">See what’s included</a>
+</div>
+
+<h2 style="margin: clamp(56px, 8vw, 88px) 0 16px; font-size: 20px; font-weight: 500; color: #a9bcc0">What the six hours look like</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 4px">
+<div style="flex: 1 1 220px; background: #162c33; border-top: 6px solid #ffb703; padding: 20px 22px 24px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ffb703">0:00</div>
+<p style="margin: 12px 0 0; font-size: 17px; color: #d9e2e3">You send the order form and your photos. The clock starts.</p>
+</div>
+<div style="flex: 1 1 220px; background: #162c33; border-top: 6px solid #ffb703; padding: 20px 22px 24px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ffb703">2:00</div>
+<p style="margin: 12px 0 0; font-size: 17px; color: #d9e2e3">Your pages are written and designed around your services.</p>
+</div>
+<div style="flex: 1 1 220px; background: #162c33; border-top: 6px solid #ffb703; padding: 20px 22px 24px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ffb703">4:00</div>
+<p style="margin: 12px 0 0; font-size: 17px; color: #d9e2e3">The site is built and checked on phones, tablets, and computers.</p>
+</div>
+<div style="flex: 1 1 220px; background: #ffb703; border-top: 6px solid #ffb703; padding: 20px 22px 24px; color: #0f1f24">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 48px; line-height: 1">6:00</div>
+<p style="margin: 12px 0 0; font-size: 17px; font-weight: 500">Your site is ready. You look it over, then decide whether to pay.</p>
+</div>
+</div>
+</section>
+
+<section id="guarantee" style="border-top: 1px solid #2b474f; border-bottom: 1px solid #2b474f">
+<div style="max-width: 1120px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0 0 36px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">The risk is ours, not yours</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 48px">
+<div style="flex: 1 1 260px">
+<h3 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 32px; line-height: 1.1; color: #ffb703">No deposit</h3>
+<p style="margin: 10px 0 0; color: #d9e2e3">We build first. You pay after the site is finished and you’ve looked it over.</p>
+</div>
+<div style="flex: 1 1 260px">
+<h3 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 32px; line-height: 1.1; color: #ffb703">Don’t like it? Pay nothing</h3>
+<p style="margin: 10px 0 0; color: #d9e2e3">If the site isn’t right for you, you owe us nothing and there’s no obligation.</p>
+</div>
+<div style="flex: 1 1 260px">
+<h3 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 32px; line-height: 1.1; color: #ffb703">Late? It’s free</h3>
+<p style="margin: 10px 0 0; color: #d9e2e3">If your site isn’t ready six hours after we confirm your order, you get it for free.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="included" style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">What you get for $199</h2>
+<p style="margin: 14px 0 40px; max-width: 60ch; color: #d9e2e3">Everything a local service business needs to look professional and get the phone ringing.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 0 48px">
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Design that fits your business</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Built around your logo, colors, and the work you do.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Looks right on every phone</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Most of your customers will find you on their phone.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Tap-to-call and text buttons</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">One tap and a customer is calling or texting you.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Quote request form</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Job requests come straight to your email.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Map and service area</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Customers see where you work at a glance.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Facebook and Instagram links</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Your social pages, connected to your site.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Basic Google setup</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">Page titles and descriptions written so locals can find you.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Fast loading</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">A light site that opens quickly, even on a weak signal.</p>
+</div>
+<div style="flex: 1 1 300px; border-top: 1px solid #2b474f; padding: 20px 0 24px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600">Connected to your domain</h3>
+<p style="margin: 6px 0 0; color: #a9bcc0">We put the site live on your web address.</p>
+</div>
+</div>
+</section>
+
+<section id="how" style="background: #162c33">
+<div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0 0 40px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Four steps to your site</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 32px 40px">
+<li style="flex: 1 1 220px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 64px; line-height: 1; color: #ffb703">1</div>
+<h3 style="margin: 12px 0 0; font-size: 22px; font-weight: 600">Fill out the order form</h3>
+<p style="margin: 6px 0 0; color: #d9e2e3">It takes about five minutes.</p>
+</li>
+<li style="flex: 1 1 220px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 64px; line-height: 1; color: #ffb703">2</div>
+<h3 style="margin: 12px 0 0; font-size: 22px; font-weight: 600">Send your logo and photos</h3>
+<p style="margin: 6px 0 0; color: #d9e2e3">Email them to us. Phone photos of your work are fine.</p>
+</li>
+<li style="flex: 1 1 220px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 64px; line-height: 1; color: #ffb703">3</div>
+<h3 style="margin: 12px 0 0; font-size: 22px; font-weight: 600">We build it</h3>
+<p style="margin: 6px 0 0; color: #d9e2e3">Six hours after we confirm your order, your site is ready.</p>
+</li>
+<li style="flex: 1 1 220px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 64px; line-height: 1; color: #ffb703">4</div>
+<h3 style="margin: 12px 0 0; font-size: 22px; font-weight: 600">Review, then pay</h3>
+<p style="margin: 6px 0 0; color: #d9e2e3">Only if you like what you see.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<section id="pricing" style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0 0 40px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Simple pricing</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 320px; border: 2px solid #ffb703; border-radius: 6px; padding: 32px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">Your website</h3>
+<div style="margin-top: 12px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 88px; line-height: 1; color: #ffb703">$199</div>
+<p style="margin: 8px 0 0; font-size: 20px; font-weight: 600">Regular price <s style="color: #a9bcc0">$499</s>. You save $300, which is 60% off.</p>
+<p style="margin: 8px 0 0; color: #d9e2e3">Black Friday price for orders placed through November 30. One time, paid after you’ve seen the finished site.</p>
+<a href="#order" style="display: inline-block; margin-top: 24px; background: #ffb703; color: #0f1f24; font-weight: 600; font-size: 19px; text-decoration: none; padding: 14px 26px; border-radius: 4px">Start my site</a>
+</div>
+<div style="flex: 1 1 320px; border: 1px solid #2b474f; border-radius: 6px; padding: 32px; background: #162c33">
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">Hosting and updates</h3>
+<div style="margin-top: 12px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 88px; line-height: 1">$19<span style="font-size: 30px; font-weight: 600; color: #a9bcc0"> a month</span></div>
+<ul style="margin: 16px 0 0; padding: 0 0 0 20px; color: #d9e2e3">
+<li>Hosting, so your site stays online</li>
+<li>Changes to text, prices, and photos</li>
+<li>Backups of your site</li>
+<li>Help by email and phone</li>
+</ul>
+</div>
+</div>
+<p style="margin: 24px 0 0; color: #a9bcc0; max-width: 70ch">Your domain name, like yourbusiness.com, is paid separately to the domain registrar. If you don’t have one yet, we’ll help you pick and register it.</p>
+</section>
+
+<section id="faq" style="border-top: 1px solid #2b474f">
+<div style="max-width: 820px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0 0 28px; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Common questions</h2>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">Is the site really done in six hours?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">Yes. The six hours start when we confirm your order and have your photos. If we miss the deadline, the site is free.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">How long does the Black Friday price last?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">Through November 30. Any order placed by then gets the $199 price, even if we build your site a few days later. After that, a site costs $499.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">When do I pay?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">After the site is finished and you’ve looked it over. We don’t take a deposit. When you approve it, we send a secure payment link and you pay by card.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">What if I don’t like the site?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">Then you don’t pay, and you have no obligation to us. You can also ask for changes first.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">Are the domain and hosting included?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">The $199 covers building the site and connecting it to your domain. Hosting and updates are $19 a month. The domain name is paid separately to the registrar.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">What do you need from me?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">The order form, your logo if you have one, and photos of your work. If you don’t have a logo, we’ll set your business name in clean lettering.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">Can I change things later?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">Yes. With the $19 monthly plan, send us new prices, photos, or text and we’ll update the site for you.</p>
+</details>
+<details style="border-top: 1px solid #2b474f; border-bottom: 1px solid #2b474f; padding: 6px 0">
+<summary style="font-size: 21px; font-weight: 600; padding: 14px 0">What kinds of businesses do you build for?</summary>
+<p style="margin: 0 0 16px; color: #d9e2e3">Local service businesses: landscaping, cleaning, auto detailing, handyman work, painting, roofing, plumbing, and similar trades.</p>
+</details>
+</div>
+</section>
+
+<section id="order" style="background: #162c33">
+<div style="max-width: 820px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 48px)">
+<h2 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Start your site</h2>
+<p style="margin: 14px 0 32px; color: #d9e2e3">About five minutes. The more you tell us, the better your site will be. No payment now.</p>
+
+<!-- ORDER FORM. Orders are emailed through FormSubmit (formsubmit.co).
+     After you activate it, you can replace the email address below and in the
+     script at the bottom of this file with the private code FormSubmit gives you. -->
+<form id="order-form" action="https://formsubmit.co/adjustrategy@gmail.com" method="POST" novalidate>
+<input type="hidden" name="_subject" value="New SixHourSite order">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+
+<ol class="steps" aria-label="Order form steps">
+<li>1. Contact</li>
+<li>2. Your business</li>
+<li>3. Domain</li>
+<li>4. Confirm</li>
+</ol>
+
+<div class="step" data-step="1">
+<div class="field">
+<label for="f-name">Your name</label>
+<input id="f-name" name="name" type="text" autocomplete="name" required style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+<div class="field">
+<label for="f-phone">Phone number</label>
+<input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+<div class="field">
+<label for="f-email">Email address</label>
+<input id="f-email" name="email" type="email" autocomplete="email" required style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+</div>
+
+<div class="step" data-step="2">
+<div class="field">
+<label for="f-business">Business name</label>
+<input id="f-business" name="business" type="text" autocomplete="organization" required style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+<div class="field">
+<label for="f-trade">What kind of work do you do?</label>
+<select id="f-trade" name="work" style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px; min-height: 54px">
+<option>Landscaping and lawn care</option>
+<option>Cleaning</option>
+<option>Auto detailing</option>
+<option>Handyman and repairs</option>
+<option>Painting</option>
+<option>Roofing</option>
+<option>Plumbing, electrical, or HVAC</option>
+<option>Something else</option>
+</select>
+</div>
+<div class="field">
+<label for="f-city">City and state</label>
+<input id="f-city" name="location" type="text" placeholder="Phoenix, AZ" required style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+<div class="field">
+<label for="f-services">Your main services and anything customers should know</label>
+<textarea id="f-services" name="services" rows="4" style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px; resize: vertical"></textarea>
+</div>
+</div>
+
+<div class="step" data-step="3">
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 600; padding: 0; margin-bottom: 10px">Do you already have a domain name?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<label class="choice"><input type="radio" name="has_domain" value="Yes"> Yes, I have one</label>
+<label class="choice"><input type="radio" name="has_domain" value="No, I need help getting one"> No, help me get one</label>
+</div>
+</fieldset>
+<div class="field" id="domain-field" hidden>
+<label for="f-domain">Your domain</label>
+<input id="f-domain" name="domain" type="text" placeholder="yourbusiness.com" style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+<div class="field">
+<label for="f-social">Facebook or Instagram page, if you have one</label>
+<input id="f-social" name="social_page" type="text" placeholder="facebook.com/yourbusiness" style="font: inherit; color: #f2efe6; background: #0b181c; border: 1px solid #5d7a82; border-radius: 4px; padding: 14px 16px">
+</div>
+</div>
+
+<div class="step" data-step="4">
+<h3 class="js-only" style="margin: 0; font-size: 22px; font-weight: 600">Check your details</h3>
+<dl id="summary" class="js-only" style="margin: 0; display: grid; grid-template-columns: minmax(110px, 1fr) 2fr; gap: 10px 20px; border: 1px solid #2b474f; border-radius: 4px; padding: 20px; background: #0f1f24">
+<dt style="color: #a9bcc0">Name</dt><dd data-sum="name" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Phone</dt><dd data-sum="phone" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Email</dt><dd data-sum="email" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Business</dt><dd data-sum="business" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Work</dt><dd data-sum="work" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Location</dt><dd data-sum="location" style="margin: 0; overflow-wrap: anywhere"></dd>
+<dt style="color: #a9bcc0">Domain</dt><dd data-sum="domain" style="margin: 0; overflow-wrap: anywhere"></dd>
+</dl>
+<p style="margin: 0; color: #d9e2e3">After you send your order, we’ll email you to confirm it and collect your logo and photos. The six hours start when we confirm. No payment now.</p>
+<div>
+<button id="send-btn" type="submit" style="font: inherit; font-weight: 600; font-size: 20px; cursor: pointer; padding: 16px 30px; min-height: 56px; border-radius: 4px; border: 2px solid #ffb703; background: #ffb703; color: #0f1f24">Send my order</button>
+</div>
+</div>
+
+<p id="form-error" role="alert" hidden style="margin: 20px 0 0; padding: 12px 16px; border: 1px solid #ffb703; border-radius: 4px; color: #ffd166"></p>
+
+<div class="js-only" id="form-nav" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px">
+<button id="back-btn" type="button" hidden style="font: inherit; font-weight: 600; cursor: pointer; padding: 14px 26px; min-height: 52px; border-radius: 4px; border: 2px solid #5d7a82; background: transparent; color: #f2efe6">Back</button>
+<button id="next-btn" type="button" style="font: inherit; font-weight: 600; cursor: pointer; padding: 14px 30px; min-height: 52px; border-radius: 4px; border: 2px solid #ffb703; background: #ffb703; color: #0f1f24">Next</button>
+</div>
+</form>
+
+<div id="order-done" hidden tabindex="-1" style="border: 2px solid #ffb703; border-radius: 6px; padding: 32px">
+<h3 style="margin: 0; font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 40px; line-height: 1.1; color: #ffb703">Order sent</h3>
+<p style="margin: 12px 0 0; color: #d9e2e3">Thanks, <span id="done-name"></span>. We’ll email you at <span id="done-email" style="overflow-wrap: anywhere"></span> to confirm your order and collect your logo and photos. The six hours start when we confirm.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="border-top: 1px solid #2b474f">
+<div style="max-width: 1120px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; gap: 32px 64px; justify-content: space-between">
+<div style="flex: 1 1 300px; max-width: 420px">
+<div style="font-family: Barlow Condensed, Arial Narrow, sans-serif; font-weight: 700; font-size: 30px">SixHourSite</div>
+<p style="margin: 10px 0 0; color: #a9bcc0">Websites for local service businesses. Ready in six hours, no deposit, and free if we’re late.</p>
+<p style="margin: 10px 0 0; color: #a9bcc0">Built and operated by MaximusAI LLC, a US company registered in Delaware.</p>
+</div>
+<div style="flex: 0 1 auto">
+<h2 style="margin: 0 0 10px; font-size: 18px; font-weight: 600">On this page</h2>
+<p style="margin: 0"><a href="#included" style="display: inline-block; padding: 8px 0; color: #f2efe6">What you get</a></p>
+<p style="margin: 0"><a href="#pricing" style="display: inline-block; padding: 8px 0; color: #f2efe6">Pricing</a></p>
+<p style="margin: 0"><a href="#order" style="display: inline-block; padding: 8px 0; color: #f2efe6">Start my site</a></p>
+</div>
+</div>
+<div style="max-width: 1120px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px) 32px; color: #a9bcc0; font-size: 16px">© 2026 MaximusAI LLC. All rights reserved. SixHourSite is a service of MaximusAI LLC, a Delaware limited liability company.</div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  // Where orders are sent. After FormSubmit is activated you can replace the
+  // email address here (and in the form's action) with the private code it gives you.
+  var ENDPOINT = 'https://formsubmit.co/ajax/adjustrategy@gmail.com';
+
+  // Black Friday countdown: ends November 30 at midnight Pacific time.
+  var saleEnds = Date.UTC(2026, 11, 1, 8, 0, 0);
+  var timer = document.getElementById('sale-timer');
+  var clock = document.getElementById('countdown');
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var left = Math.floor((saleEnds - Date.now()) / 1000);
+    if (left <= 0) { timer.hidden = true; return; }
+    timer.hidden = false;
+    clock.textContent = Math.floor(left / 86400) + 'd ' + pad(Math.floor(left % 86400 / 3600)) + ':' +
+      pad(Math.floor(left % 3600 / 60)) + ':' + pad(left % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // Order form: four steps, then send by email.
+  var form = document.getElementById('order-form');
+  var stepEls = form.querySelectorAll('.step');
+  var markers = form.querySelectorAll('.steps li');
+  var errorEl = document.getElementById('form-error');
+  var backBtn = document.getElementById('back-btn');
+  var nextBtn = document.getElementById('next-btn');
+  var sendBtn = document.getElementById('send-btn');
+  var domainField = document.getElementById('domain-field');
+  var step = 1;
+  form.classList.add('js');
+
+  function val(name) {
+    var el = form.elements[name];
+    return el && el.value ? String(el.value).trim() : '';
+  }
+  function showError(msg) {
+    errorEl.textContent = msg;
+    errorEl.hidden = !msg;
+  }
+  function domainSummary() {
+    var has = val('has_domain');
+    if (has === 'Yes') return val('domain') || 'I have one';
+    return 'I need help getting one';
+  }
+  function show(n) {
+    step = n;
+    for (var i = 0; i < stepEls.length; i++) {
+      stepEls[i].classList.toggle('active', i + 1 === n);
+      markers[i].className = i + 1 === n ? 'current' : (i + 1 < n ? 'done' : '');
+      if (i + 1 === n) markers[i].setAttribute('aria-current', 'step');
+      else markers[i].removeAttribute('aria-current');
+    }
+    backBtn.hidden = n === 1;
+    nextBtn.hidden = n === 4;
+    showError('');
+    if (n === 4) {
+      var cells = form.querySelectorAll('[data-sum]');
+      for (var j = 0; j < cells.length; j++) {
+        var key = cells[j].getAttribute('data-sum');
+        cells[j].textContent = key === 'domain' ? domainSummary() : val(key);
+      }
+    }
+  }
+  function validate() {
+    if (step === 1) {
+      if (!val('name')) return 'Enter your name so we know who to ask for.';
+      if (!val('phone')) return 'Enter a phone number where we can reach you.';
+      if (val('email').indexOf('@') < 1) return 'Enter an email address, like you@example.com.';
+    }
+    if (step === 2) {
+      if (!val('business')) return 'Enter your business name.';
+      if (!val('location')) return 'Enter the city and state where you work.';
+    }
+    if (step === 3) {
+      if (!val('has_domain')) return 'Tell us whether you already have a domain name.';
+    }
+    return '';
+  }
+
+  form.addEventListener('change', function (e) {
+    if (e.target.name === 'has_domain') domainField.hidden = e.target.value !== 'Yes';
+  });
+  nextBtn.addEventListener('click', function () {
+    var msg = validate();
+    if (msg) { showError(msg); return; }
+    show(step + 1);
+  });
+  backBtn.addEventListener('click', function () { show(step - 1); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (step < 4) { nextBtn.click(); return; }
+    if (val('_honey')) return;
+    var data = {
+      _subject: 'New SixHourSite order: ' + val('business'),
+      _template: 'table',
+      _captcha: 'false',
+      name: val('name'),
+      phone: val('phone'),
+      email: val('email'),
+      business: val('business'),
+      work: val('work'),
+      location: val('location'),
+      services: val('services'),
+      domain: domainSummary(),
+      social_page: val('social_page')
+    };
+    sendBtn.disabled = true;
+    sendBtn.textContent = 'Sending…';
+    showError('');
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Request failed');
+      return res.json();
+    }).then(function (json) {
+      if (String(json.success) !== 'true') throw new Error('Not sent');
+      document.getElementById('done-name').textContent = data.name;
+      document.getElementById('done-email').textContent = data.email;
+      form.hidden = true;
+      var done = document.getElementById('order-done');
+      done.hidden = false;
+      done.focus();
+    }).catch(function () {
+      sendBtn.disabled = false;
+      sendBtn.textContent = 'Send my order';
+      showError('We couldn’t send your order. Check your internet connection and select “Send my order” again.');
+    });
+  });
+
+  show(1);
+})();
+</script>
+</body>
+</html>
