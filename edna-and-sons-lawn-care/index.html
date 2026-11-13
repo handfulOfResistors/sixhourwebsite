@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Preview site: kept out of search results until the owner approves it. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Edna and Sons Lawn Care LLC | Family Lawn Care in Tampa, FL</title>
+<meta name="description" content="Family-owned lawn care in Tampa, FL. Mowing, edging, hedge trimming, and flower beds. 5-star rated on Google. Call or text (813) 381-0154.">
+<meta name="theme-color" content="#2c3a23">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Lora:ital,wght@0,700;1,700&display=swap">
+<style>
+/* ---- Per-business settings: change these to restyle the template ---- */
+:root{
+  --deep:#2c3a23;      /* dark green: header text, footer, dark sections */
+  --grass:#4f7f2a;     /* mid green: links, icons */
+  --grass-2:#5c9033;   /* lighter mowing stripe */
+  --accent:#ffa98f;    /* button and highlight color */
+  --accent-ink:#3a1000;
+  --cream:#fbf7ec;     /* page background */
+  --card:#ffffff;
+  --ink:#14261b;       /* body text */
+  --muted:#4d6155;
+  --line:#e2dcc9;
+  --display:"Lora", Georgia, serif;
+  --body:"Figtree", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--grass)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;margin:0;letter-spacing:-0.015em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(18px,5vw,48px)}
+.section{padding:clamp(56px,8vw,104px) 0}
+.eyebrow{font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--grass);margin-bottom:14px}
+.h2{font-size:clamp(34px,5vw,56px)}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:58ch;margin-top:16px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:19px;text-decoration:none;border:2px solid transparent;line-height:1.1}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.btn-primary:hover{filter:brightness(1.05)}
+.btn-ghost{border-color:var(--deep);color:var(--deep);background:transparent}
+.btn-ghost:hover{background:var(--deep);color:#fff}
+.on-dark .btn-ghost{border-color:#fff;color:#fff}
+.on-dark .btn-ghost:hover{background:#fff;color:var(--deep)}
+
+/* Preview bar */
+.preview-bar{display:block;background:#101a14;color:#e9efe9;text-decoration:none;font-size:15px;text-align:center;padding:9px 16px;line-height:1.4}
+.preview-bar b{color:var(--accent);font-weight:700}
+.preview-bar u{text-underline-offset:3px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(251,247,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep)}
+.brand-mark{width:44px;height:44px;flex:none}
+.brand-name{font-family:var(--display);font-weight:700;font-size:23px;line-height:1;letter-spacing:-0.01em}
+.brand-sub{display:block;font-family:var(--body);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grass);margin-top:5px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:16px;padding:10px 0}
+.nav a:hover{color:var(--grass)}
+.header-call{min-height:48px;padding:10px 20px;font-size:17px;white-space:nowrap}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:560px){.header-call span{display:none}.header-call{padding:10px 14px}.brand-name{font-size:20px}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center;padding-top:clamp(36px,6vw,80px);padding-bottom:clamp(48px,7vw,96px)}
+.rating-chip{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-weight:600;font-size:16px;color:var(--ink);text-decoration:none;margin-bottom:22px}
+.stars{position:relative;display:inline-block;font-size:18px;line-height:1;letter-spacing:2px;color:#d9d3bf;white-space:nowrap}
+.stars::before{content:"★★★★★"}
+.stars::after{content:"★★★★★";position:absolute;left:0;top:0;width:var(--fill,100%);overflow:hidden;color:#f5a800}
+.hero h1{font-size:clamp(44px,7vw,84px)}
+.hero h1 em{font-style:italic;color:var(--grass)}
+.hero .lead{font-size:clamp(19px,2.1vw,22px)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero-note{margin-top:18px;font-size:16px;color:var(--muted)}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 30px 60px -30px rgba(23,64,42,.55)}
+.hero-badge{position:absolute;left:-18px;bottom:28px;background:var(--deep);color:#fff;border-radius:18px;padding:16px 20px;max-width:230px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.hero-badge strong{display:block;font-family:var(--display);font-size:24px;line-height:1.1;color:var(--accent)}
+.hero-badge span{display:block;font-size:15px;margin-top:6px;color:#dbe8df}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-photo img{aspect-ratio:16/11}
+  .hero-badge{left:14px;bottom:14px}
+}
+
+/* Mowing stripes: the signature band */
+.stripes{background:repeating-linear-gradient(100deg,var(--grass) 0 72px,var(--grass-2) 72px 144px);color:#fff}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 32px;padding:26px 0}
+.fact{display:flex;align-items:center;gap:14px;font-weight:600;font-size:18px;text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.fact svg{width:30px;height:30px;flex:none}
+@media (max-width:760px){.facts{grid-template-columns:1fr;gap:14px}}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
+.service{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.service img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.service-body{padding:20px 22px 24px}
+.service h3{font-size:25px}
+.service p{margin-top:8px;color:var(--muted);font-size:17px}
+.also{margin-top:26px;color:var(--muted);font-size:17px}
+@media (max-width:1000px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.services-grid{grid-template-columns:1fr}}
+
+/* Story */
+.story{background:var(--deep);color:#eef4ef}
+.story .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,80px);align-items:center}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px}
+.story .eyebrow{color:var(--accent)}
+.story p{margin-top:18px;font-size:clamp(18px,2vw,20px);color:#d5e3d9;max-width:56ch}
+.story blockquote{margin:28px 0 0;padding:0 0 0 22px;border-left:4px solid var(--accent);font-family:var(--display);font-size:clamp(24px,3vw,32px);line-height:1.2;color:#fff}
+@media (max-width:900px){.story .wrap{grid-template-columns:1fr}.story img{aspect-ratio:16/10}}
+
+/* Steps */
+.steps{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.steps li{counter-increment:step;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 26px 30px}
+.steps li::before{content:counter(step);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:var(--display);font-weight:700;font-size:26px;margin-bottom:18px}
+.steps h3{font-size:25px}
+.steps p{margin-top:8px;color:var(--muted)}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* Rating */
+.rating{text-align:center}
+.rating .wrap{padding-top:clamp(48px,7vw,84px);padding-bottom:clamp(48px,7vw,84px)}
+.rating-num{font-family:var(--display);font-weight:700;font-size:clamp(84px,14vw,150px);line-height:.9;text-shadow:0 3px 0 rgba(0,0,0,.18)}
+.rating .stars{font-size:clamp(30px,5vw,44px);color:rgba(255,255,255,.35);margin-top:14px}
+.rating .stars::after{color:var(--accent)}
+.rating p{font-size:clamp(19px,2.2vw,23px);font-weight:600;margin-top:12px;text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.rating a{display:inline-block;margin-top:22px;color:#fff;font-weight:700;text-underline-offset:4px}
+
+/* Area */
+.area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.chips{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:600;font-size:17px}
+.area .note{margin-top:22px;color:var(--muted)}
+.map{border:0;width:100%;aspect-ratio:4/3;border-radius:28px;background:#dfe7d8;box-shadow:0 0 0 1px var(--line)}
+@media (max-width:900px){.area .wrap{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=60") center/cover;opacity:.22}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,64px);align-items:center}
+.contact .h2{font-size:clamp(38px,6vw,68px)}
+.contact .lead{color:#d5e3d9}
+.phone-big{display:inline-block;margin-top:26px;font-family:var(--display);font-weight:700;font-size:clamp(40px,7vw,72px);line-height:1;color:var(--accent);text-decoration:none}
+.hours{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:26px 28px}
+.hours h3{font-size:25px;margin-bottom:14px}
+.hours dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:10px 20px;font-size:18px}
+.hours dt{color:#d5e3d9}
+.hours dd{margin:0;font-weight:600;text-align:right}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr}}
+
+/* Footer */
+.site-footer{background:#101a14;color:#b9c8bd;font-size:16px;padding:32px 0 110px}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+.site-footer a{color:#e9efe9}
+@media (min-width:761px){.site-footer{padding-bottom:32px}}
+
+/* Sticky call bar on phones */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(16,26,20,.96);backdrop-filter:blur(8px)}
+.callbar .btn{flex:1;min-height:52px;padding:10px 12px;font-size:18px}
+.callbar .btn-ghost{border-color:#fff;color:#fff}
+@media (max-width:760px){.callbar{display:flex}}
+
+/* Brand badge (initials) */
+.brand-badge{width:44px;height:44px;flex:none;border-radius:50%;background:var(--deep);color:var(--accent);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-0.02em}
+/* Statement band (used when no rating is shown) */
+.statement p{font-family:var(--display);font-weight:700;font-size:clamp(30px,5vw,54px);line-height:1.1;max-width:22ch;margin:0 auto;text-wrap:balance}
+/* Work gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.gallery div{aspect-ratio:4/3;border:2px dashed #b9c4b4;border-radius:22px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);font-weight:600;background:repeating-linear-gradient(135deg,#f3eedf 0 14px,#f8f4e8 14px 28px)}
+@media (max-width:760px){.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<a class="preview-bar" href="https://sixhourwebsite.online/#order">
+  Preview built for <b>Edna and Sons Lawn Care LLC</b> by SixHourSite. Make it yours for <b>$199</b> through Nov 30. <u>See how</u>
+</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Edna and Sons Lawn Care LLC, home">
+      <span class="brand-badge" aria-hidden="true">E&amp;S</span>
+      <span class="brand-name">Edna and Sons<span class="brand-sub">Lawn care · Tampa, FL</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      
+      <a href="#story">About</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary header-call" href="tel:+18133810154" aria-label="Call (813) 381-0154">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.600a1 1 0 0 1-.25 1l-2.220 2.200Z"/></svg>
+      <span>(813) 381-0154</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <a class="rating-chip" href="https://www.google.com/search?q=Edna+and+Sons+Lawn+Care+LLC+Tampa+FL" target="_blank" rel="noopener">
+        <span class="stars" style="--fill:100%" aria-hidden="true"></span>
+        5-star rated on Google
+      </a>
+      <h1>A family business that treats your yard <em>like our own.</em></h1>
+      <p class="lead">Edna and Sons Lawn Care is a family-owned business in Tampa. We mow, edge, and trim, and we look after your yard with the care we’d give our own.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+18133810154"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.600a1 1 0 0 1-.25 1l-2.220 2.200Z"/></svg> Call (813) 381-0154</a>
+        <a class="btn btn-ghost" href="sms:+18133810154?&body=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20lawn."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/></svg> Text for a free quote</a>
+      </div>
+      
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1783451439661-152793447cbf?auto=format&fit=crop&w=1100&h=1375&q=70" width="1100" height="1375" alt="A bright flower bed and trimmed hedge beside a neat green lawn">
+      <div class="hero-badge">
+        <strong>Family-owned</strong>
+        <span>When you call, you talk to the family that does the work.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripes">
+  <div class="wrap facts">
+<div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.500 12 4l9 7.500"/><path d="M5.500 10v10h13V10"/><path d="M10 20v-6h4v6"/></svg>Family-owned in Tampa</div>
+<div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.700 5.600 6.100.8-4.500 4.300 1.100 6.100L12 16.900 6.600 19.800l1.100-6.100L3.200 9.400l6.100-.8L12 3Z"/></svg>5-star rated on Google</div>
+<div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H9l-5 4V4Z"/><path d="M8 9h8M8 12.500h5"/></svg>Free quotes by call or text</div>
+  </div>
+</div>
+
+<section id="services" class="section">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="h2">Care for the whole yard</h2>
+    <p class="lead">Regular maintenance or a one-time job. Tell us what you need.</p>
+    <div class="services-grid">
+      <article class="service">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1782613064276-750c3a3ccdec?auto=format&fit=crop&w=700&h=525&q=65" width="700" height="525" alt="A worker pushing a mower across a front lawn">
+        <div class="service-body"><h3>Lawn mowing</h3><p>An even, clean cut, weekly or every other week.</p></div>
+      </article>
+<article class="service">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1689728318937-17d24bc0a65c?auto=format&fit=crop&w=700&h=525&q=65" width="700" height="525" alt="A man using a string trimmer along the edge of a lawn">
+        <div class="service-body"><h3>Edging and trimming</h3><p>Sharp lines along driveways, walkways, and fences.</p></div>
+      </article>
+<article class="service">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1543309959-4d45288d1629?auto=format&fit=crop&w=700&h=525&q=65" width="700" height="525" alt="A hedge trimmer cutting the top of a green shrub">
+        <div class="service-body"><h3>Hedges and shrubs</h3><p>Bushes shaped and kept off your windows and walkways.</p></div>
+      </article>
+<article class="service">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1759577085573-dc717319109f?auto=format&fit=crop&w=700&h=525&q=65" width="700" height="525" alt="Red and pink flowers in beds with mulch and white stone">
+        <div class="service-body"><h3>Flower beds and mulch</h3><p>Beds weeded and refreshed, so the front of your home stands out.</p></div>
+      </article>
+    </div>
+    <p class="also">Need a cleanup or something that isn’t listed? <a href="sms:+18133810154?&body=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20lawn.">Text us</a> and ask.</p>
+  </div>
+</section>
+
+
+<section id="story" class="section story">
+  <div class="wrap">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1688064776733-c163870305f2?auto=format&fit=crop&w=900&h=1125&q=65" width="900" height="1125" alt="A Florida home with palm trees, a trimmed hedge, and a green front lawn">
+    <div>
+      <p class="eyebrow">Our family</p>
+      <h2 class="h2">It’s right there in the name</h2>
+      <p>Edna and Sons is a family business. The people who answer your call are the people who show up at your home.</p>
+<p>That keeps us honest. We work the way we’d want someone to work at our own house: on time, careful, and with respect for your property.</p>
+      <blockquote>Our family, taking care of your yard.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="h2">Three steps to a better yard</h2>
+    <ol class="steps">
+      <li><h3>Call or text us</h3><p>Tell us your address and what you need. A photo of the yard helps.</p></li>
+      <li><h3>Get a free quote</h3><p>We give you a clear price before any work starts.</p></li>
+      <li><h3>We take care of it</h3><p>We show up when we said we would and leave your yard looking sharp.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="stripes rating" aria-label="Google rating">
+  <div class="wrap">
+    <div class="rating-num">5.0</div>
+    <div class="stars" style="--fill:100%" role="img" aria-label="5.0 out of 5 stars"></div>
+    <p>5-star rated on Google</p>
+    <a href="https://www.google.com/search?q=Edna+and+Sons+Lawn+Care+LLC+Tampa+FL" target="_blank" rel="noopener">Read our reviews on Google</a>
+  </div>
+</section>
+
+<section id="area" class="section area">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Service area</p>
+      <h2 class="h2">Serving Tampa and nearby</h2>
+      <p class="lead">We’re based in East Tampa and work in neighborhoods around the city.</p>
+      <ul class="chips"><li>East Tampa</li><li>Ybor City</li><li>Palmetto Beach</li><li>Seminole Heights</li><li>Brandon</li><li>Riverview</li></ul>
+      <p class="note">Not sure if we come to you? Text us your address and we’ll let you know.</p>
+    </div>
+    <iframe class="map" title="Map of the service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Tampa%2C+FL+33605&z=11&output=embed"></iframe>
+  </div>
+</section>
+
+<section id="contact" class="section contact on-dark">
+  <div class="wrap">
+    <div>
+      <h2 class="h2">Let our family take care of your yard.</h2>
+      <p class="lead">Call or text for a free quote. There’s no obligation.</p>
+      <a class="phone-big" href="tel:+18133810154">(813) 381-0154</a>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+18133810154">Call now</a>
+        <a class="btn btn-ghost" href="sms:+18133810154?&body=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20lawn.">Send a text</a>
+      </div>
+    </div>
+    <div class="hours">
+      <h3>Get in touch</h3>
+      <dl><dt>Call or text</dt><dd>(813) 381-0154</dd><dt>Quotes</dt><dd>Free</dd><dt>Google rating</dt><dd>5 stars</dd></dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Edna and Sons Lawn Care LLC · Tampa, FL · <a href="tel:+18133810154">(813) 381-0154</a></span>
+    <span>Website by <a href="https://sixhourwebsite.online/">SixHourSite</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-primary" href="tel:+18133810154">Call</a>
+  <a class="btn btn-ghost" href="sms:+18133810154?&body=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20lawn.">Text</a>
+</div>
+
+</body>
+</html>
